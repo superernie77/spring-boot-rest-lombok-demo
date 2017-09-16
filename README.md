@@ -19,3 +19,7 @@ After the build is finished run the following PCF command
 ```
 cf push
 ```
+The application is also available under the following URL:
+```
+http://spring-rest-lombok.cfapps.io/messages
+```
