@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>rest-lombok</name>
-	<description>Example of a Spring-Boot-Rest-Lombok run webapplication</description>
+	<description>Example of a Spring-Boot-Rest-Lombok run web application</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -71,14 +71,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>repository.springframework.maven.milestone</id>
-			<name>Spring Framework Maven Milestone Repository</name>
-			<url>http://maven.springframework.org/milestone</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<repositories>
 		<repository>
