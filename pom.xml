@@ -55,18 +55,40 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.cloudfoundry</groupId>
+				<artifactId>cf-maven-plugin</artifactId>
+				<version>1.0.4</version>
+				<configuration>
+					<server>pivotal-cloud-foundry</server>
+					<target>https://api.run.pivotal.io</target>
+					<org>superernie77</org>
+					<space>development</space>
+					<appname>spring-rest-lombok</appname>
+					<url>spring-rest-lombok.cfapps.io</url>
+					<instances>1</instances>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repository.springframework.maven.milestone</id>
+			<name>Spring Framework Maven Milestone Repository</name>
+			<url>http://maven.springframework.org/milestone</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<repositories>
-	<repository>
-		<id>spring-libs-release</id>
-		<name>Spring Releases</name>
-		<url>https://repo.spring.io/libs-release</url>
-		<snapshots>
-			<enabled>false</enabled>
-		</snapshots>
-	</repository>
+		<repository>
+			<id>spring-libs-release</id>
+			<name>Spring Releases</name>
+			<url>https://repo.spring.io/libs-release</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 
 
