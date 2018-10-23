@@ -6,7 +6,9 @@ Exposes a single resource under:
 ```
 http://localhost:8080/messages
 ```
+# Heroku Link
 
+https://spring-boot-rest-lombok-demo.herokuapp.com/
 
 # Deployment to PCF
 
