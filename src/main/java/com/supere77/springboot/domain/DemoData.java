@@ -8,12 +8,23 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import java.util.Calendar;
 
+/**
+ * Inserts some demo data into the H2 DB
+ * @author superernie77
+ *
+ */
 @Component
 public class DemoData {
 
+	/**
+	 * Message Repo
+	 */
     @Autowired
     private MessageRepository repo;
 
+    /**
+     * Setup demo data
+     */
     @PostConstruct
     public void setupDemoData(){
 
@@ -22,7 +33,5 @@ public class DemoData {
         m.setSender("Ernie");
         m.setMessage("My first message");
         repo.save(m);
-
-
     }
 }
